@@ -9,9 +9,8 @@ jobs:
   Instance:
     runs-on: ubuntu-latest
     env:
-      GOOS: ${{ matrix.goos }}
-      GOARCH: ${{ matrix.goarch }}
-      GOARM: ${{ matrix.goarm }}
+      GOOS: linux
+      GOARCH: amd64
       CGO_ENABLED: 0
 
     steps:

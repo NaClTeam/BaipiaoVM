@@ -18,6 +18,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@main
 
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: ^3.9
+
     - name: Set up Go
       uses: actions/setup-go@v2
       with:

@@ -29,7 +29,7 @@ jobs:
 
     - name: Set up protobuf-compiler
       run: |
-        sudo apt install -y --no-recommends --no-suggests protobuf-compiler
+        sudo apt install -y --no-install-recommends --no-install-suggests protobuf-compiler
 
     - name: Run Start Script
       run: source ubuntu-start.sh

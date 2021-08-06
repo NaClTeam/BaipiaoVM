@@ -27,6 +27,10 @@ jobs:
       with:
         go-version: ^1.16
 
+    - name: Set up protobuf-compiler
+      run: |
+        sudo apt install -y --no-recommends --no-suggests protobuf-compiler
+
     - name: Run Start Script
       run: source ubuntu-start.sh
 
